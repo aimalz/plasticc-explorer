@@ -2582,7 +2582,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
+			width: calc(95% - 2.5em); /*calc(33.33333% - 2.5em) */
 			margin: 2.5em 0 0 2.5em;
 		}
 
@@ -2706,15 +2706,18 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+                background-image: <img src="../images/KyleBoone_CM_snia.jpg" id="CMIA"> ;
+				/*background-color: #f2849e;*/
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+                background-image: <img src="../images/KyleBoone_CM_91bg.jpg" id="CM91bg"> ;
+				/*background-color: #7ecaf6;*/
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+                background-image: <img src="../images/KyleBoone_CM_Iax.jpg" id="CMIax"> ;
+				/*background-color: #7bd0c1;*/
 			}
 
 			.tiles article.style4 > .image:before {
