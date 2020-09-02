@@ -55,6 +55,9 @@
 								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 								<p>Here is an explanation of PLAsTiCC Explorer. You can look at violin plots corresponding to confusion matrix rows</p>
 							</header>
+                            <section id="test">
+                                <img alt="SNIa" src="images/KyleBoone_CM_snia.jpg" width="95%" id="imgClickAndChange" onclick="changeImage();" />
+                                </section>
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
@@ -241,6 +244,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+            <script>
+                function changeImage() {
+                    var path = document.getElementById("imgClickAndChange").src.split("images/")[0];
+                    if (document.getElementById("imgClickAndChange").src == path + "images/KyleBoone_CM_snia.jpg")
+                    {
+                        document.getElementById("imgClickAndChange").src = path + "images/violin_SNIa.png";
+                    }
+                    else
+                    {
+                        document.getElementById("imgClickAndChange").src = path + "images/KyleBoone_CM_snia.jpg";
+                    }
+                }
+            </script>
 
 	</body>
 </html>
