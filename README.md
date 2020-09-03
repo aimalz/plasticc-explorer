@@ -1,5 +1,7 @@
 # The PLAsTiCC results explorer is under construction!
 
+[![Made at #AstroHackWeek](https://img.shields.io/badge/Made%20at-%23AstroHackWeek-8063d5.svg?style=flat)](http://astrohackweek.org/)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/AstroHackWeek2020/plasticc-explorer/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
