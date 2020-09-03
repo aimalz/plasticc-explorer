@@ -11,8 +11,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
+        .column img {
+        opacity: 0.8;
+        cursor: pointer;
+        }
+        .column img:hover {
+        opacity: 1;
+        }
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .container {
+        position: relative;
+        display: none;
+        }
+        /* Expanding image text */
+        #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+        }
+        .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: black;
+        font-size: 35px;
+        cursor: pointer;
+        }
+        </style>
 	</head>
 	<body class="is-preload">
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -55,10 +95,69 @@
 								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 								<p>Here is an explanation of PLAsTiCC Explorer. You can look at violin plots corresponding to confusion matrix rows</p>
 							</header>
-                            <section id="test">
-                                <img alt="SNIa" src="images/KyleBoone_CM_snia.jpg" width="95%" id="imgClickAndChange" onclick="this.src = ((this.src == this.src.split('images/')[0]+ 'images/KyleBoone_CM_snia.jpg') ? this.src.split('images/')[0] + 'images/violin_SNIa.png' : this.src.split('images/')[0]+ 'images/KyleBoone_CM_snia.jpg');" />
-                                <img alt="SNIa91bg" src="images/KyleBoone_CM_91bg.jpg" width="95%" id="imgClickAndChange" onclick="this.src = ((this.src == this.src.split('images/')[0]+ 'images/KyleBoone_CM_91bg.jpg') ? this.src.split('images/')[0] + 'images/violin_SNIa-91bg.png' : this.src.split('images/')[0]+ 'images/KyleBoone_CM_snia.jpg');" />
-                               </section>
+                            <section id="test2">
+                                <header>
+                                    <h2>1st Place</h2>
+                                </header>
+                            <div class="column">
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_snia.jpg" alt="SNIa" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_SNIa.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_91bg.jpg" alt="SNIa-91bg" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_SNIa-91bg.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_Iax.jpg" alt="SNIax" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_SNIax.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_II.jpg" alt="SNII" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_SNII.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_Ibc.jpg" alt="SNIbc" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_SNIbc.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_SLSN.jpg" alt="SLSN-I" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_SLSN-I.png');">
+                                        </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_TDE.jpg" alt="TDE" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_TDE.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_KN.jpg" alt="KN" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_KN.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_AGN.jpg" alt="AGN" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_AGN.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_RRly.jpg" alt="RR-Lyrae" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_RRL.png');">
+                                    </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_mdwarf.jpg" alt="M-dwarf" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_M-dwarf.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_EBE.jpg" alt="EBE" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_EB.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_MIRA.jpg" alt="MIRA" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_Mira.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_mulens.jpg" alt="micro-lensing" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_mulensSingle.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_other.jpg" alt="other" style="width:100%" onclick="myFunction(this.src.split('images/')[0] + 'images/violin_other.png');">
+                                </div>
+                                <div class="row">
+                                    <img src="images/KyleBoone_CM_titles.jpg" alt="other" style="width:100%">
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="container">
+                                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                    <img id="expandedImg" style="width:100%">
+                                    <div id="imgtext"></div>
+                                </div>
+                            </div>
+                            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                            </section>
 
 						</div>
 					</div>
@@ -112,6 +211,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
+                function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    expandImg.src = imgs;
+                    expandImg.parentElement.style.display = "block";
+                }
+            </script>
 
 	</body>
 </html>
